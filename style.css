@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+:root {
+    --lm-bg-dark: #141D2F;
+    --lm-bg-content-dark: #1E2A47;
+    --lm-bg-light: #F6F8FF;
+    --lm-bg-content-light: #FEFEFE;
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+    --lm-text: #4B6A9B;
+    --lm-text-alt: #2B3442;
+    --lm-icon-bg: brightness(1000%);
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-xl: rgba(70, 88, 109, 0.15);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--lm-bg-dark);
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 730px;
+}
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    user-select: none;
+}
+
+.user-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    width: 90px;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lm-bg-content-dark);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    display: flex;
+    height: 100%;
+    padding: 6px;
+    padding: 10px;
+    background-image: url('assets/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: center;
+}
+
+form input {
+    all: unset;
+    width: 50%;
+    padding-left: 50px;
+    color: white;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+form p {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.btn {
+    all: unset;
+    background-color: var(--btn);
+    color: white;
+    min-width: 84px;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+    cursor: pointer;
+}
+
+.output {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--lm-bg-content-dark);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    padding: 40px;
+    margin-top: 2rem;
+    user-select: none;
+}
+
+.output-image {
+    width: 20%; 
+}
+
+.output-image img {
+    width: 117px;
+    object-fit: cover;
+    border-radius: 90px;
+}
+
+.output-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+}
+
+.nameNdDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameNdDate p:first-of-type {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nameNdDate p:last-of-type {
+    font-size: 15px;
+}
+
+.github-link a{
+    font-size: 16px;
+    color: var(--btn);
+}
+
+.desc {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    margin: 1rem 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lm-bg-dark);
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 18px 32px;
+}
+
+.card div p:first-of-type {
+    font-size: 13px;
+}
+
+.card div p:last-of-type {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px 0;
+    flex-wrap: wrap;
+}
+
+.data-container div {
+    display: flex;
+    width: 50%;
+    gap: 14px;
+    align-items: center;
+    width: 47.5%;
+    font-size: 15px;
+}
+
+.data-container div img {
+    height: 20px;
+    font-size: 15px;
+}
+
+.data-container div p, .data-container div a {
+    word-break: break-all;
+    opacity: 0.75;
+}
+
+a[data-website], a[data-twitter] {
+    color: var(--btn);
+    opacity: 0.75;
+    color: white;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective - Find Gihub Details By Github-Id`s</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+        <div class="header container">
+            <h1>DevDetective</h1>
+            <div class="user-mode">
+                <p data-userModeText>Light</p>
+                <img src="assets/sun-icon.svg" data-userModeIcon>
+            </div>
+        </div>
+
+        <!-- Search Container -->
+        <div class="search-container container">
+            <form>
+                <input type="text" placeholder="Enter a GitHub Username..." data-inputId>
+                <p data-invalidText>no search results</p>
+                <button class="btn" type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Details Container -->
+        <div class="output container">
+            <div class="output-image">
+                <img src="" data-profileIcon>
+            </div>
+            <div class="output-text">
+
+                <!-- Name and Date -->
+                <div class="nameNdDate">
+                    <p data-userName></p>
+                    <p data-dateOfJoining>Joined:</p>
+                </div>
+
+                <!-- Github url -->
+                <div class="github-link">
+                    <a href="" target="_blank" data-githubUrl></a>
+                </div>
+
+                <!-- Profile bio -->
+                <div class="desc">
+                    <p data-desc></p>
+                </div>
+
+                <!-- Repositories, Followers & Following -->
+                <div class="card">
+                    <div>
+                        <p class="repo">Repos</p>
+                        <p data-repos></p>
+                    </div>
+                    <div>
+                        <p class="follower">Followers</p>
+                        <p data-follower></p>
+                    </div>
+                    <div>
+                        <p class="following">Following</p>
+                        <p data-following></p>
+                    </div>
+                </div>
+
+                <!-- Company, Links & Location-->
+                <div class="data-container">
+                    <div>
+                        <img src="assets/location-icon.svg">
+                        <p data-location></p>
+                    </div>
+                    <div>
+                        <img src="assets/website-icon.svg">
+                        <a href="" target="_blank" data-website></a>
+                    </div>
+                    <div>
+                        <img src="assets/twitter-icon.svg">
+                        <a href="" target="_blank" data-twitter></a>
+                    </div>
+                    <div>
+                        <img src="assets/company-icon.svg">
+                        <p data-company></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
